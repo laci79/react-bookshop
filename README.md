@@ -1,0 +1,13 @@
+Ez a példaoldal a React könyvtár segítségével készült és az oldalak közötti navigációhoz a HashRouter-t használja. 
+Egy útikönyv webáruházat modellez, ahol a könyvek fényképe és leírása melletti gombra kattintva lehet őket a kosárba helyezni. A kosár egy külön komponensben kapott helyet és kezdetben nem látható. A könyvek melletti gombra kattintva jelenik meg, illetve a fejlécen lévő kosár ikonra kattintva szintén kinyitható és onnan be is csukható. A kosár megjelenítése animációval történik, amit a css-ben a transition: max-height értékének változtatása idéz elő. Ez talán a legegyszerűbb megoldás, és itt megfelelően működik is, de megvannak a maga korlátai.
+
+Az oldal össze van kötve egy Firebase adatbázissal, ahova a kosár adatai elmentésre kerülnek. Autentikációt azonban még nem írtam hozzá, így mindenki ugyan azt az adatot módosítja. Természetesen egy valódi weboldalon ez nem lenne használható, egyelőre csak az adatbázissal való összekötés gyakorlása volt a cél. Ugyanígy a megrendelés véglegesítésére való további gombok és egyéb elemek is hiányoznak.
+Mivel az eltárolt adatokat az oldal a szerverről kapja az első betöltődésnél egy kis időbe telik amíg megjelennek ezek az adatok. Előfordul, hogy a harmadik oldalon levő Google térkép betöltésére is egy kicsit várni kell.
+
+A fejléchez Bootstrap-et használtam, néhány apró módosítással a css-ben: a gombok háttérszíne és betűszíne is változik az aktív oldal esetén, valamint akkor is ha csak az egeret a gomb fölé visszük. A fejléc bal szélén levő 'Útikönyvek áruháza' felirat logószerű betűtípusát a Google Fonts oldalról linkeltem be.
+Igyekeztem, hogy az oldal a mai modern mobile-first elveknek is megfeleljen és különböző méretű képernyőkön is jól nézzen ki. Ehhez a css végén mindössze néhány media query-re volt szükség, illetve a Bootstrap navbar önmagában is reszponzív.
+A fejlécen a másik két oldalon is megjelenik a kosár ikon, onnan azonban nem használható. Ez sajnos elég nagy hiba, de én úgy látom, hogy csak az oldal komoly átstrukturálásával lenne kijavítható. Most megtapasztaltam, hogy valóban milyen fontos a kiinduláskor az alapos tervezés.
+
+A projekt létrehozása során sok leírást és videót néztem meg. Külön szeretném kiemelni Wes Bos: React for Beginners videókurzusát, amit az oldalam alapjaként használtam fel, valamint Bob Ziroll: Learn React JS - Full Course for Beginners youtube-on elérhető videóját. A könyvek lapjait utánzó css kód is tőle származik.
+
+Az egész projekt közelebb áll egy vázlathoz, mint egy kész weboldalhoz, én azonban sokat tanultam belőle. Elsősorban a komponensek elrendezéséről, valamint a state és a props segítségével a komponensek között az adatok átadásáról.
