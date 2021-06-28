@@ -1,0 +1,270 @@
+/*  ---------------------------------
+
+       GENERAL STYLES 
+  
+-------------------------------------  */
+
+body {
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+p {
+  margin: 10px 20px;
+}
+
+
+/*  ---------------------------------
+
+       HEADER & NAVIGATION 
+  
+-------------------------------------  */
+
+.nav1 {
+  background-color: #6A5ACD;
+  color: white;
+  padding: 0px 0px;      /* navbar sized buttons */
+}
+
+.nav-link {
+  padding: 12px 150px; 
+}
+
+.nav-item {
+  color: white;
+  padding: 30px ;       /* width of Home etc */ 
+}
+
+.active1 {
+  background-color: #cbc5ee;
+}
+
+.active1 .nav-item {
+  color: black ;
+}
+
+.nav-link:hover {
+  background-color: #cbc5ee;
+}
+.nav-link:hover > .nav-item {
+  color: black;
+}
+
+.basket-img {
+  height: 20px;
+}
+.basket-button {
+  position: absolute;
+  top: 7px;
+  left: 70%;
+  border-radius: 5px;
+}
+.brand {
+  padding: 0 20px;
+}
+.brand-name {
+  color: papayawhip;
+  font-family: 'Lovers Quarrel', cursive;
+  font-size: 1.9rem;
+}
+
+/*  ---------------------------------
+
+          BOOK STORE
+  
+-------------------------------------  */
+
+.book-store{
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+  "order"
+  "books";
+  grid-template-columns: 100%;
+  grid-template-rows: 0px 1fr;
+}
+
+.menu-book {
+  border-bottom: 2px solid #000;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.book-name {  
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.price {
+  font-size: 1.4rem;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+.books{
+  padding: 0 50px;
+  margin-top: 50px;
+}
+
+.book-img {
+  float: left;
+  width: 150px;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  border-left: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+
+  background-color: white;
+  box-shadow: 
+     /* top layer shadow */
+     2px 2px 3px rgba(0, 0, 0, 0.15),
+     /* second layer*/
+     4px 4px  #eee,
+     /* second layer shadow*/
+     6px 6px 3px  rgba(0, 0, 0, 0.15),
+     /* third layer */
+     8px 8px  #eee,
+     /* third layer shadow */
+     10px 10px 3px rgba(0, 0, 0, 0.15);
+}
+
+/*  ------------------------------
+
+             ORDER
+  
+----------------------------------  */
+
+.order-wrap {
+  position: fixed;
+  width: 100%;
+  background-color: papayawhip;
+  margin-top: 40px;
+  left: 0px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.7s ease-in-out;
+}
+
+.order-wrap.closed {
+  max-height: 300px;
+}
+
+.order-list {
+  list-style: none;
+}
+
+.order-items {
+  position: relative;
+}
+
+.order-price {
+  position: absolute;
+  left: 30%;
+}
+
+.delete-order {
+  position: absolute;
+  right: 5%;
+}
+
+.decrease-order,
+.increase-order,
+.delete-order {
+  background-color: papayawhip;
+  border: none;
+}
+
+.increase-decrease-order {
+  position: absolute;
+  right: 12%;
+}
+
+.total {
+  margin: 40px 40px;
+}
+
+.total-count {
+  position: absolute;
+  right: 68px;
+}
+
+/*  ------------------------------
+
+        CONTACT & ABOUT PAGES
+  
+----------------------------------  */
+
+.contact,
+.about {
+  margin-top: 80px;
+}
+
+.map-responsive {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left:0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin-top: 20px;
+}
+
+ 
+
+
+/*  ---------------------------------
+
+       RULES FOR BIGGER SCREENS  
+  
+    ----------------------------------  */
+
+@media (min-width: 768px) {
+  .book-store {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+  }
+  .order-wrap {
+    width: 400px;                     
+    left: calc(100vw - 450px);       
+    margin-top: 60px;                
+  }
+  .map-responsive iframe {
+    width: 600px;
+    height: 450px;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    width: 80vw;
+  }
+  .book-store {
+    width: calc(100vw - 50%);    
+  }
+
+  .basket-button {
+    top: 10px;
+  }
+}
+
+
+
+
+
