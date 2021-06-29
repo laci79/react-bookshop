@@ -6,6 +6,7 @@ Mivel az eltárolt adatokat az oldal a szerverről kapja az első betöltődésn
 
 A fejléchez Bootstrap-et használtam, néhány apró módosítással a css-ben: a gombok háttérszíne és betűszíne is változik az aktív oldal esetén, valamint akkor is ha csak az egeret a gomb fölé visszük. A fejléc bal szélén levő 'Útikönyvek áruháza' felirat logószerű betűtípusát a Google Fonts oldalról linkeltem be.
 Igyekeztem, hogy az oldal a mai modern mobile-first elveknek is megfeleljen és különböző méretű képernyőkön is jól nézzen ki. Ehhez a css végén mindössze néhány media query-re volt szükség, illetve a Bootstrap navbar önmagában is reszponzív. Mindazonáltal ezen a területen lehetne még egy kicsit tesztelni és finomítani, mert nem vagyok benne biztos, hogy valóban minden eszözön megfelelően jelenik meg.
+
 A fejlécen a másik két oldalon is megjelenik a kosár ikon, onnan azonban nem használható. Ez sajnos elég nagy hiba, de én úgy látom, hogy csak az oldal komoly átstrukturálásával lenne kijavítható. Most megtapasztaltam, hogy valóban milyen fontos a kiinduláskor az alapos tervezés.
 
 A projekt létrehozása során sok leírást és videót néztem meg. Külön szeretném kiemelni Wes Bos: React for Beginners videókurzusát, amit az oldalam alapjaként használtam fel, valamint Bob Ziroll: Learn React JS - Full Course for Beginners youtube-on elérhető videóját. A könyvek lapjait utánzó css kód is tőle származik.
