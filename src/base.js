@@ -2,9 +2,9 @@ import Rebase from 're-base';
 import firebase from 'firebase';
 
 const config = {
-    apiKey: "AIzaSyCOibP20tbq37CxQukWYTly8FkcL2bI-44",
-    authDomain: "react-tutorial-1bb66.firebaseapp.com",
-    databaseURL: "https://react-tutorial-1bb66-default-rtdb.europe-west1.firebasedatabase.app"
+    apiKey: "AIzaSyBL7kcOi6St5Ok40XEYOswtlCPi1BtFPN4",
+    authDomain: "react-bookshop-4be0f.firebaseapp.com",
+    databaseURL: "https://react-bookshop-4be0f-default-rtdb.europe-west1.firebasedatabase.app/"
 };
 
 const app = firebase.initializeApp(config);
