@@ -11,7 +11,7 @@ const Header = props => {
  
     return (
         <Navbar  expand="lg" fixed="top"  className="nav1">
-            <Navbar.Brand href="/" className="brand"><span className="brand-name">Útikönyvek Boltja</span></Navbar.Brand>
+            <Navbar.Brand href="/react-bookshop" className="brand"><span className="brand-name">Útikönyvek Boltja</span></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
@@ -28,31 +28,6 @@ const Header = props => {
             </Navbar.Collapse>
             <button className="basket-button" onClick={props.showOrder} >  <img src={basket} alt="basket" className="basket-img"></img></button>
         </Navbar>
-
-
-        // <nav>
-        //     <ul className="header">
-        //         <li>
-        //             <Link className={currentRoute.endsWith("/") ? "tab active" : "tab"} to="/">Home</Link>
-        //         </li>
-        //         <li>
-        //             <Link className={currentRoute.includes("about") ? "tab active" : "tab"} to="/About">About</Link>
-        //         </li>
-        //         <li>
-        //             <Link className={currentRoute.includes("contact") ? "tab active" : "tab"} to="/contact">Contact</Link>
-        //         </li>
-        //         <li>
-
-        //             <button className="basket-button" onClick={props.childToParent}> <img src={basket} alt="ez" className="basket"></img></button>
-        //         </li>
-        //     </ul>
-        // </nav>
-
-
-
-
-
-
     );
 
 }
