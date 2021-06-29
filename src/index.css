@@ -15,7 +15,7 @@ h2 {
   margin: 20px 0;
 }
 p {
-  margin: 10px 20px;
+  margin: 1rem 0;
 }
 
 
@@ -106,20 +106,17 @@ p {
 
 .price {
   font-size: 1.4rem;
-  -webkit-box-pack: end;
-  justify-content: flex-end;
 }
 
 .books{
-  padding: 0 50px;
+  padding-right: 2rem;
   margin-top: 50px;
 }
 
 .book-img {
-  float: left;
   width: 150px;
   margin-right: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border-radius: 3px;
   border-left: 1px solid lightgray;
   border-top: 1px solid lightgray;
@@ -207,11 +204,20 @@ p {
 .contact,
 .about {
   margin-top: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+.about + p,
+.contact > p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 
 .map-responsive {
   overflow:hidden;
   padding-bottom:56.25%;
+  padding-bottom: 100%;
   position:relative;
   height: 0;
 }
@@ -240,6 +246,9 @@ p {
     height: 100vh;
     display: flex;
   }
+  .book-img {
+    float: left;
+  }
   .order-wrap {
     width: 400px;                     
     left: calc(100vw - 450px);       
@@ -263,8 +272,3 @@ p {
     top: 10px;
   }
 }
-
-
-
-
-
