@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-bookshop/static/css/main.5688f66e.chunk.css",
-    "main.js": "/react-bookshop/static/js/main.e48fded6.chunk.js",
-    "main.js.map": "/react-bookshop/static/js/main.e48fded6.chunk.js.map",
+    "main.css": "/react-bookshop/static/css/main.e28bccb1.chunk.css",
+    "main.js": "/react-bookshop/static/js/main.4dadfe3b.chunk.js",
+    "main.js.map": "/react-bookshop/static/js/main.4dadfe3b.chunk.js.map",
     "runtime-main.js": "/react-bookshop/static/js/runtime-main.bf90d2b4.js",
     "runtime-main.js.map": "/react-bookshop/static/js/runtime-main.bf90d2b4.js.map",
     "static/js/2.0b6f5905.chunk.js": "/react-bookshop/static/js/2.0b6f5905.chunk.js",
     "static/js/2.0b6f5905.chunk.js.map": "/react-bookshop/static/js/2.0b6f5905.chunk.js.map",
     "index.html": "/react-bookshop/index.html",
-    "static/css/main.5688f66e.chunk.css.map": "/react-bookshop/static/css/main.5688f66e.chunk.css.map",
+    "static/css/main.e28bccb1.chunk.css.map": "/react-bookshop/static/css/main.e28bccb1.chunk.css.map",
     "static/js/2.0b6f5905.chunk.js.LICENSE.txt": "/react-bookshop/static/js/2.0b6f5905.chunk.js.LICENSE.txt",
     "static/media/egyiptom.661814ec.jpg": "/react-bookshop/static/media/egyiptom.661814ec.jpg",
     "static/media/hollandia.ac2202b7.jpg": "/react-bookshop/static/media/hollandia.ac2202b7.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.bf90d2b4.js",
     "static/js/2.0b6f5905.chunk.js",
-    "static/css/main.5688f66e.chunk.css",
-    "static/js/main.e48fded6.chunk.js"
+    "static/css/main.e28bccb1.chunk.css",
+    "static/js/main.4dadfe3b.chunk.js"
   ]
 }
